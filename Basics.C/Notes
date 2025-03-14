@@ -11,9 +11,9 @@
 //}
 //
 //VAR TIPES
-//- int = inteira
-//- float = fracionaria
-//-
+//- int = inteira ("%d")
+//- float = fracionaria("%f")
+//- 
 //
 //IF_ELSE
 //
