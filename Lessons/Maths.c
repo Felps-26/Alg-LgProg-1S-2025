@@ -4,6 +4,8 @@
 
 int main(void){
 
+//Variaveis
+
 int A, B, soma, subtr, mult, divisI, rest, incrA, decrA, incrB, decrB;
 float radicA, radicB, poten, divis;
 
@@ -12,7 +14,7 @@ float radicA, radicB, poten, divis;
     printf("Digite o segundo valor:\n");
     scanf("%d", &B);
     
-
+//Operacoes
    
     soma = A + B;
     subtr = A - B;
@@ -28,6 +30,7 @@ float radicA, radicB, poten, divis;
     incrB = B + 1;
     decrB = B - 1;
 
+//Resultados
 
     printf("Resultados:\n");
     printf("Soma: %d\n", soma);
