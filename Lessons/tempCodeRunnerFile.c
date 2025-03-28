@@ -1,1 +1,0 @@
-   poten = pow(A,B);
