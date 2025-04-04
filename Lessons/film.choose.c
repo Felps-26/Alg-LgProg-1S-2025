@@ -5,7 +5,7 @@ int main(){
 int LI;
     printf("Hello user, do you want to watch:\n1-light film\n2-intense film?\n");
     printf("Option:");
-        scanf("%d", &LI);
+    scanf("%d", &LI);
 
     if(LI == 1){
         int CA;
