@@ -4,18 +4,16 @@
 
 int main(){
 
-    int i = 0;
-
     //do{
-    //
+    //    int i = 0;
     //    printf("%d\n", i);
     //    i++;
     //    Sleep(50); 
     //
     //} while(i <=100); 7
 
-    for(i = 0; i <= 100; i++){
-        
+    for(int i = 0; i <= 100; i++){
+
         printf("%d\n", i);
         Sleep(50); 
     }
