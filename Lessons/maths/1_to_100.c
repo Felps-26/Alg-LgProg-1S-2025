@@ -1,11 +1,16 @@
 #include <stdio.h>
+#include <windows.h>
+
 
 int main(){
 
     int i = 0;
+
     do{
-        printf("%d ", i);
+
+        printf("%d\n", i);
         i++;
+        Sleep(50); 
 
     } while(i <=100); 
     
