@@ -4,7 +4,7 @@
 int main() {
     float sum = 0.0;
     int num_students, approv_count = 0, k;
-    float max_grade = 0.0, min_grade = 10.0;
+    float max_grade = 0.0, min_grade = 10 ;
 
     printf("Enter the number of students in the class: \n");
     scanf("%d", &num_students);
@@ -27,10 +27,10 @@ int main() {
             max_grade = grades[i];
         }
         if (grades[i] < min_grade){
-             min_grade = grades[i];
+            min_grade = grades[i];
         }
         if (grades[i] >= 6.0){
-         approv_count++;
+            approv_count++;
         }
     }
 
