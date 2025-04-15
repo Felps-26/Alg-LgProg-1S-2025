@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     float sum = 0.0;
@@ -22,9 +23,15 @@ int main() {
             }
         } while (grades[i] < 0.0 || grades[i] > 10.0);
 
-        if (grades[i] > max_grade) max_grade = grades[i];
-        if (grades[i] < min_grade) min_grade = grades[i];
-        if (grades[i] >= 6.0) approv_count++;
+        if (grades[i] > max_grade){
+            max_grade = grades[i];
+        }
+        if (grades[i] < min_grade){
+             min_grade = grades[i];
+        }
+        if (grades[i] >= 6.0){
+         approv_count++;
+        }
     }
 
     // Calculate the average using the function
