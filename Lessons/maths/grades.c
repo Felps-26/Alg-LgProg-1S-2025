@@ -7,11 +7,10 @@ int main() {
     float sum = 0.0;
     int num_students, approv_count = 0, k;
     float max_grade = 0.0, min_grade = 10.0;
+    float grades[num_students];
 
     printf("Enter the number of students in the class: \n");
     scanf("%d", &num_students);
-
-    float grades[num_students];
 
     for (int i = 0; i < num_students; i++) {
         do {
