@@ -1,8 +1,5 @@
 #include <stdio.h>
 
-// Function to calculate the average of the class
-
-
 int main() {
     float sum = 0.0;
     int num_students, approv_count = 0, k;
@@ -29,13 +26,11 @@ int main() {
         if (grades[i] >= 6.0) approv_count++;
     }
 
-    // Calculate the average using the function
     float average = sum / num_students;
 
     printf("The position k of the student to view their grade (1 to %d): \n", num_students);
     scanf("%d", &k);
 
-    // Student Chooser to position k
     if (k < 1 || k > num_students) {
         printf("Invalid position! Please try again.\n");
         return 1;
@@ -43,7 +38,6 @@ int main() {
         printf("The grade of student [%d] is: %.2f\n", k, grades[k - 1]);
     }
 
-    // Show results
     printf("\nClass results:\n");
     printf("Average grade: %.2f\n", average);
     printf("Highest grade: %.2f\n", max_grade);
