@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "numbers_library.c"
 
 int main(){
     int a, b;
