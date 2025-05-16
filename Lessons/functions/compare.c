@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 
         printf("The bigger value is: %d\n", return_bigger_value(a, b));
         printf("The smaller value is: %d\n", return_smaller_value(a, b));
-    } else (argc == 4) {
+    } else if (argc == 4) {
         a = atoi(argv[1]);
         b = atoi(argv[2]);
         c = atoi(argv[3]);
