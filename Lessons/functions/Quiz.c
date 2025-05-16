@@ -43,7 +43,6 @@ int main(){
             1, 2, 3, 4,
             "Rio de Janeiro", "Brasilia", "Salvador", "Sao Paulo"
         );
-
         if (answer == 2){
             printf("Correct answer!\n");
         }else{
@@ -55,9 +54,15 @@ int main(){
             1, 2, 3, 4,
             "Paris", "London", "Berlin", "Madrid"
         );
+        if (answer == 1){
+            printf("Correct answer!\n");
+        }else{
+            printf("Wrong answer!\n");
+        }
+
     } else{
         printf("Exiting the quiz...\n");
-        printf("Please try our QUIZ at next time\n");
+        printf("Please, try our QUIZ at next time!\n");
     }
 
     return 0;
