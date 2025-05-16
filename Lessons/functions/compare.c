@@ -13,12 +13,20 @@ int main(int argc, char *argv[]) {
         b = atoi(argv[2]);
         printf("The bigger value is: %d\n", return_bigger_value(a, b));
         printf("The smaller value is: %d\n", return_smaller_value(a, b));
-    } else {
+    } else if (argc == 4) {
         a = atoi(argv[1]);
         b = atoi(argv[2]);
         c = atoi(argv[3]);
         printf("The biggest value is: %d\n", return_bigger_value_3n(a, b, c));
         printf("The smallest value is: %d\n", return_smaller_value3n(a, b, c));
+    } else if (argc > 4) {
+        int n = argc - 1;
+        int numbers[n];
+        for(int i = 0; i < n; i++) {
+            numbers[i] = atoi(argv[i + 1]);
+        }
+        printf("The biggest value is: %d\n", bigger_n(numbers, n));
+        printf("The smallest value is: %d\n", smaller_n(numbers, n));
     }
 
     

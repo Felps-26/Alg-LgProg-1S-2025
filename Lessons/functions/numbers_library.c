@@ -24,3 +24,11 @@ int return_smaller_value_3n(int a, int b, int c){
     int smaller = return_smaller_value(a, b);
     return return_smaller_value(return_smaller_value(a, b),c);
 }
+
+int bigger_n(int numbers[], int n){
+    int bigger = numbers[0];
+    for(int i = 0; i < n; i++){
+        bigger = return_bigger_value(bigger, numbers[i]);
+    }
+    return bigger;
+}
