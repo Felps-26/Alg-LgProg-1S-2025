@@ -13,8 +13,9 @@ void print_student(Student student) {
 
 int main() {
     int n;
-    float max = 0.0;
-    float min = 10.0;
+    float max = 0.0, min = 10.0;
+    int max_SG = 0, min_SG = 0;
+    float sum = 0.0;
 
     printf("How many students? ");
     scanf("%d", &n);
@@ -30,17 +31,28 @@ int main() {
         scanf("%f", &students[i].grade);
         getchar(); 
 
-        if (students[i].grade > max) max = students[i].grade;
-        if (students[i].grade < min) min = students[i].grade;
+        sum += students[i].grade;
+
+        if (students[i].grade > max) {
+            max = students[i].grade;
+            max_SG = i;
+        }
+        if (students[i].grade < min) {
+            min = students[i].grade;
+            min_SG = i;
+        }
     }
 
     for (int i = 0; i < n; i++) {
-        printf("Student %d: ", i + 1);
+        printf("\nStudent %d: ", i + 1);
         print_student(students[i]);
     }
-    printf("\n");
-    printf("The worst grade is: %.2f\n", min);
-    printf("The best grade is: %.2f\n", max);
+
+    float avg = sum / n;
+    printf("\nThe average class grade:  %.2f\n\n", avg);
+
+    printf("The worst grade is: %.2f - Student: %s", min, students[min_SG].name);
+    printf("The best grade is: %.2f - Student: %s", max, students[max_SG].name);
 
     return 0;
 }
