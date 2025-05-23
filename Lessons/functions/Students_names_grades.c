@@ -36,8 +36,7 @@ int main() {
         if (students[i].grade > max) {
             max = students[i].grade;
             max_SG = i;
-        }
-        if (students[i].grade < min) {
+        } else if (students[i].grade < min) {
             min = students[i].grade;
             min_SG = i;
         }
