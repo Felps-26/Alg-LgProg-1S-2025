@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 #include "numbers_library.c"
 
 int  main(int argc, char *argv[])
@@ -8,7 +9,19 @@ int  main(int argc, char *argv[])
         printf("Invalid arguments\n");
         return 1;
 
-    }else if(strcmp(argv[1], "maior") == 0){
+    }else if(strcmp(argv[1], "prime") == 0){
+        if (argc < 3){
+            printf("Invalid arguments\n");
+            return 1;
+        }
+        int a = atoi(argv[2]);
+        if (is_prime(a)){
+            printf("%d is prime\n", a);
+        } else {
+            printf("%d is not prime\n", a);
+        }
+        
+    } else if(strcmp(argv[1], "maior") == 0){
         if (argc < 4){
             printf("Invalid arguments\n");
             return 1;
